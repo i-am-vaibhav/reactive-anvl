@@ -2,7 +2,7 @@ package com.reactive.anvl.entity;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotBlank;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -24,7 +24,7 @@ public class Role implements Serializable {
 	@Id
 	private String id;
 
-	@NotNull
+	@NotBlank(message = "role.name.empty.msg")
 	private String name;
 
 	private String description;

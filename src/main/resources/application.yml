@@ -1,0 +1,23 @@
+logging:
+  level:
+    com:
+      reactive:
+        anvl: DEBUG
+    org:
+      springframework:
+        boot: INFO
+    web: INFO
+server:
+  port: 9080
+
+spring:
+  application:
+    name: reactive-anvl    
+  mongodb:
+    embedded:
+      storage:
+        oplog-size : 0
+        
+
+
+

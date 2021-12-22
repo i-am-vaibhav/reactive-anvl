@@ -4,7 +4,7 @@
 package com.reactive.anvl.entity;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.Set;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -41,6 +41,6 @@ public class User implements Serializable {
 	@JsonIgnore
 	private String password;
 
-	private ArrayList<Role> roles;
+	private Set<Role> roles;
 
 }
